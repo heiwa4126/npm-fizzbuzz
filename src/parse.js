@@ -6,10 +6,7 @@
  */
 function parsePositiveInteger(arg) {
 	const num = Number.parseInt(arg);
-	if (Number.isInteger(num) && num > 0) {
-		return num;
-	}
-	return null;
+	return Number.isInteger(num) && num > 0 ? num : null;
 }
 
 module.exports = { parsePositiveInteger };
