@@ -52,7 +52,7 @@
 		"temp/"
 	],
 	"devDependencies": {
-		"@biomejs/biome": "~1.7",
+		"@biomejs/biome": "~1.8",
 		"npm-package-json-lint": "~7",
 		"tape": "~5"
 	}
