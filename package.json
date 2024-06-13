@@ -17,8 +17,9 @@
 		"ex2": "node ./examples/ex2.js",
 		"test": "tape __tests__/**/*.test.js",
 		"lint": "biome lint ./src ./__tests__",
-		"fix": "biome check --apply ./src ./__tests__",
 		"lint:package": "npmPkgJsonLint .",
+		"actionlint": "actionlint .github/**/*.yml",
+		"fix": "biome check --write ./src ./__tests__",
 		"fix:package": "npm pkg fix",
 		"publish:npmjs": "npm publish --access=public"
 	},
@@ -26,11 +27,7 @@
 		"type": "git",
 		"url": "git+https://github.com/heiwa4126/npm-fizzbuzz.git"
 	},
-	"keywords": [
-		"demo",
-		"tutorial",
-		"template"
-	],
+	"keywords": ["demo", "tutorial", "template"],
 	"author": {
 		"name": "heiwa4126",
 		"email": "heiwa4126@gmail.com"
@@ -40,17 +37,8 @@
 		"url": "https://github.com/heiwa4126/npm-fizzbuzz/issues"
 	},
 	"homepage": "https://github.com/heiwa4126/npm-fizzbuzz#readme",
-	"files": [
-		"package.json",
-		"README.md",
-		"LICENSE",
-		"src/"
-	],
-	"ignore": [
-		"**/*.test.js/",
-		"**/.DS_Store",
-		"temp/"
-	],
+	"files": ["package.json", "README.md", "LICENSE", "src/"],
+	"ignore": ["**/*.test.js/", "**/.DS_Store", "temp/"],
 	"devDependencies": {
 		"npm-package-json-lint": "~8",
 		"@biomejs/biome": "~1",
