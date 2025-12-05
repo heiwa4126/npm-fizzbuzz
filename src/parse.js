@@ -5,7 +5,7 @@
  * @returns {number|null} - The parsed positive integer, or null if the argument is not a positive integer.
  */
 function parsePositiveInteger(arg) {
-	const num = Number.parseInt(arg);
+	const num = Number.parseInt(arg, 10);
 	return Number.isInteger(num) && num > 0 ? num : null;
 }
 
