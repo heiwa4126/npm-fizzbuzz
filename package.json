@@ -55,6 +55,6 @@
 	"devDependencies": {
 		"@biomejs/biome": "~2.4.4",
 		"npm-package-json-lint": "~10.4.0",
-		"tape": "~5.9.0"
+		"tape": "~5.10.2"
 	}
 }
