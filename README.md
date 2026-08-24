@@ -18,7 +18,7 @@ CLI として `heiwa4126-fizzbuzz` がインストールされる。
 const { fizzbuzz } = require("@heiwa4126/fizzbuzz");
 
 for (const i of fizzbuzz(15)) {
-  console.log(i);
+	console.log(i);
 }
 ```
 

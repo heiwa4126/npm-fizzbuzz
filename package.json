@@ -2,59 +2,60 @@
 	"name": "@heiwa4126/fizzbuzz",
 	"version": "1.1.2",
 	"description": "NPM package tutorial",
-	"type": "commonjs",
-	"main": "src/index.js",
-	"bin": {
-		"heiwa4126-fizzbuzz": "src/cli.js"
+	"keywords": [
+		"demo",
+		"template",
+		"tutorial"
+	],
+	"homepage": "https://github.com/heiwa4126/npm-fizzbuzz#readme",
+	"bugs": {
+		"url": "https://github.com/heiwa4126/npm-fizzbuzz/issues"
 	},
-	"engines": {
-		"node": ">=16"
-	},
-	"scripts": {
-		"linklocal": "bin/linklocal.sh",
-		"cli": "node src/cli.js",
-		"ex1": "node ./examples/ex1.js",
-		"ex2": "node ./examples/ex2.js",
-		"test": "tape __tests__/**/*.test.js",
-		"lint": "biome lint ./src ./__tests__",
-		"lint:package": "npmPkgJsonLint .",
-		"actionlint": "actionlint .github/**/*.yml",
-		"fix": "biome check --write ./src ./__tests__",
-		"fix:package": "npm pkg fix",
-		"publish:npmjs": "npm publish --access=public"
+	"license": "MIT",
+	"author": {
+		"name": "heiwa4126",
+		"email": "heiwa4126@gmail.com"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/heiwa4126/npm-fizzbuzz.git"
 	},
-	"keywords": [
-		"demo",
-		"tutorial",
-		"template"
-	],
-	"author": {
-		"name": "heiwa4126",
-		"email": "heiwa4126@gmail.com"
+	"bin": {
+		"heiwa4126-fizzbuzz": "src/cli.js"
 	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/heiwa4126/npm-fizzbuzz/issues"
-	},
-	"homepage": "https://github.com/heiwa4126/npm-fizzbuzz#readme",
 	"files": [
 		"package.json",
 		"README.md",
 		"LICENSE",
 		"src/"
 	],
+	"type": "commonjs",
+	"main": "src/index.js",
+	"scripts": {
+		"linklocal": "bin/linklocal.sh",
+		"cli": "node src/cli.js",
+		"ex1": "node ./examples/ex1.js",
+		"ex2": "node ./examples/ex2.js",
+		"test": "tape __tests__/**/*.test.js",
+		"lint:package": "npmPkgJsonLint .",
+		"actionlint": "actionlint .github/**/*.yml",
+		"fix": "biome check --write ./src ./__tests__",
+		"fix:package": "npm pkg fix",
+		"publish:npmjs": "npm publish --access=public",
+		"format": "oxfmt",
+		"lint": "oxlint",
+		"check": "oxfmt && oxlint --fix"
+	},
+	"devDependencies": {
+		"npm-package-json-lint": "~9.0.0",
+		"tape": "~5.9.0"
+	},
+	"engines": {
+		"node": ">=16"
+	},
 	"ignore": [
 		"**/*.test.js/",
 		"**/.DS_Store",
 		"temp/"
-	],
-	"devDependencies": {
-		"@biomejs/biome": "~2.3.8",
-		"npm-package-json-lint": "~9.0.0",
-		"tape": "~5.9.0"
-	}
+	]
 }

@@ -5,13 +5,7 @@
  * @returns {string|number} - The FizzBuzz value at the given index.
  */
 function fizzbuzzAt(i) {
-	return i % 3 === 0
-		? i % 5 === 0
-			? "FizzBuzz"
-			: "Fizz"
-		: i % 5 === 0
-			? "Buzz"
-			: i;
+	return i % 3 === 0 ? (i % 5 === 0 ? "FizzBuzz" : "Fizz") : i % 5 === 0 ? "Buzz" : i;
 }
 
 /**

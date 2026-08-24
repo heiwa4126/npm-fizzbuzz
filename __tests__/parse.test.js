@@ -10,16 +10,8 @@ test("parsePositiveInteger returns the correct value for valid positive integers
 });
 
 test("parsePositiveInteger returns null for invalid inputs", (t) => {
-	t.equal(
-		parsePositiveInteger("abc"),
-		null,
-		"Should return null for non-numeric input",
-	);
-	t.equal(
-		parsePositiveInteger("-10"),
-		null,
-		"Should return null for negative numbers",
-	);
+	t.equal(parsePositiveInteger("abc"), null, "Should return null for non-numeric input");
+	t.equal(parsePositiveInteger("-10"), null, "Should return null for negative numbers");
 	t.equal(parsePositiveInteger("0"), null, "Should return null for zero");
 	// Add more test cases for invalid inputs
 	t.end();
