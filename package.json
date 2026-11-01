@@ -47,7 +47,7 @@
 		"check": "oxfmt && oxlint --fix"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "~2.5.2",
+		"@biomejs/biome": "~2.6.4",
 		"npm-package-json-lint": "~11.0.0",
 		"tape": "~5.10.2"
 	},
